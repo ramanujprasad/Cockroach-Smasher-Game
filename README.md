@@ -1,6 +1,6 @@
 # Cockroach Smasher Game
 
-This is very simple game created using basics of HTML, JavaScript & CSS
+This is very simple game created using basics of HTML, jQuery & CSS
 
 ## Getting Started
 
