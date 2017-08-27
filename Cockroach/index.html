@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/game.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/game.js"></script>
+    <title>Cockroach Smasher</title>
+</head>
+
+<body>
+    <div class="container mainScreen" id="mainDivId">
+        <div id="aliveDiv0" class="alive-cockroach-0">
+            <img class="image image0 activeCockroach" id="aliveCockroach0" src="images/Active.png" />
+        </div>
+        <div id="aliveDiv1" class="alive-cockroach-1">
+            <img class="image image1 activeCockroach" id="aliveCockroach1" src="images/Active.png" />
+        </div>
+        <div id="aliveDiv2" class="alive-cockroach-2">
+            <img class="image image2 activeCockroach" id="aliveCockroach2" src="images/Active.png" />
+        </div>
+        <div id="aliveDiv3" class="alive-cockroach-3">
+            <img class="image image3 activeCockroach" id="aliveCockroach3" src="images/Active.png" />
+        </div>
+        <div id="deadDiv" class="hide-element">
+            <img class="deadCockroach" id="deadCockroach0" src="images/Dead.png" />
+        </div>
+        <div class="bottomFameOptionsDiv" class="hide-element">
+            <span class="bottomGameOptions" id="gameExit">Exit</span>
+            <span id="gameLevel">Timer - <span id="level">0</span></span>
+            <span id="gameScore">score - <span id="score">0</span></span>
+        </div>
+        <div class="homeScreenName">
+            <span class="homeScreenNameClass">Cockroach <br/>Smasher</span>
+        </div>
+        <div id="homeScreenPlay">
+            <img class="playButton" src="images/playButton.png" />
+        </div>
+        <div id="endCard" class="hide-element">
+            <div align="center">
+                <img class="gameOver" src="images/GameOver.png" />
+            </div>
+            <div align="center" style="margin-top: 0%;">
+                <span class="accuracy" id="">Your Ranking : </span>
+                <span class="accuracy" id="userRank"></span>
+            </div>
+            <br/>
+            <div id="leftEndCard">
+                <div>
+                    <span class="target" id="target">Target: </span>
+                    <span class="target" id="targetValue">25</span>
+                </div>
+                <br/>
+                <div>
+                    <span class="hits" id="hits">Hits: </span>
+                    <span class="hits" id="hitsValue"></span>
+                </div>
+                <br/>
+                <div>
+                    <span class="misses" id="misses">Miss Hits: </span>
+                    <span class="misses" id="missesValue"></span>
+                </div>
+                <br/>
+                <div>
+                    <span class="time" id="time">Time: </span>
+                    <span class="time" id="timeValue"></span>
+                </div>
+                <br/>
+                <div>
+                    <span class="accuracy" id="accuracy">Accuracy: </span>
+                    <span class="accuracy" id="accuracyValue"></span>
+                </div>
+                <div>
+                    <span class="accuracy"></span>
+                    <span class="accuracy"></span>
+                </div>
+                <div>
+                    <span class="accuracy"></span>
+                    <span class="accuracy"></span>
+                </div>
+            </div>
+            <div id="rightEndCard">
+                <div class="fiveScorers">Top Five Scorer's</div>
+                </br>
+                <div>
+                    <span class="tableRankHead">Rank</span>
+                    <span class="tableScoreHead">Hits</span>
+                    <span class="tableTimeHead">Time</span>
+                </div>
+                <br/>
+                <div>
+                    <span class="tableRank">1</span>
+                    <span class="tableScore" id="tscore0"></span>
+                    <span class="tableTime" id="time0"></span>
+                    <span class="awardImage sucessImage0 left-4">
+						<img class="top-0" src="images/awards.png" />
+					</span>
+                </div>
+                <br/>
+                <div>
+                    <span class="tableRank">2</span>
+                    <span class="tableScore" id="tscore1"></span>
+                    <span class="tableTime" id="time1"></span>
+                    <span class="awardImage sucessImage1 left-4">
+						<img class="top-0"  src="images/awards.png" />
+					</span>
+                </div>
+                <br/>
+                <div>
+                    <span class="tableRank">3</span>
+                    <span class="tableScore" id="tscore2"></span>
+                    <span class="tableTime" id="time2"></span>
+                    <span class="awardImage sucessImage2 left-4">
+						<img class="top-0" src="images/awards.png" />
+					</span>
+                </div>
+                <br/>
+                <div>
+                    <span class="tableRank">4</span>
+                    <span class="tableScore" id="tscore3"></span>
+                    <span class="tableTime" id="time3"></span>
+                    <span class="awardImage sucessImage3 left-4">
+						<img class="top-0" src="images/awards.png" />
+					</span>
+                </div>
+                <br/>
+                <div>
+                    <span class="tableRank">5</span>
+                    <span class="tableScore" id="tscore4"></span>
+                    <span class="tableTime" id="time4"></span>
+                    <span class="awardImage sucessImage4 left-4">
+						<img class="top-0" src="images/awards.png" />
+					</span>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <div align="center" class="top-0">
+                <img class="endGameRestart" src="images/restart.png" />
+                <img class="endGameExit" src="images/exit.png" />
+            </div>
+            <br/>
+            <div align="center" id="congrats" class="hide-element">
+                <img class="max-width-45" src="images/congrats.png" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
