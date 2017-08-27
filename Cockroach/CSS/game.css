@@ -1,4 +1,8 @@
-.image{
+body {
+    padding: 0;
+    margin: 0;
+}
+.image {
     position: absolute;
     max-width: 12%;
     min-width: 12%;
@@ -9,76 +13,100 @@
     min-width: 15%;
 }
 #homeScreenPlay {
-	height: 100%;
-	display: inline-block; 
-
+    height: 100%;
+    display: inline-block;
 }
-.playButton{
-  max-width: 45%;
-  margin-top: 70%;
-  opacity: 1;
+.playButton {
+    max-width: 45%;
+    margin-top: 70%;
+    opacity: 1;
 }
 .playButton:hover {
-   cursor: hand;
-   cursor: pointer;
-   opacity: .4;
+    cursor: hand;
+    cursor: pointer;
+    opacity: .4;
 }
-.mainDiv{
-  background-image: url('../IMG/kitchen_bg.jpg');
-  background-size:100% 100%;
-  background-repeat: no-repeat;
-
+.alive-cockroach-0 {
+    display: none;
+    padding-left: 3%;
+}
+.alive-cockroach-1 {
+    display: none;
+    padding-left: 25%;
+}
+.alive-cockroach-2 {
+    display: none;
+    padding-left: 50%;
+}
+.alive-cockroach-3 {
+    display: none;
+    padding-left: 75%;
+}
+.hide-element {
+    display: none;
+}
+.top-0 {
+    margin-top: 0%;
+}
+.left-4 {
+    padding-left: 4%;
+}
+.max-width-45 {
+    max-width: 45%;
+}
+.mainDiv {
+    background-image: url('../images/kitchen_bg.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .mainScreen {
-  background-image: url('../IMG/homeScreen.png');
-  background-size:100% 100%;
-  background-repeat: no-repeat;
+    background-image: url('../images/homeScreen.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
-body {
-padding: 0;
-margin: 0;
+.bottomGameOptions,
+#gameLevel,
+#gameScore {
+    color: #ffffff;
+    text-shadow: 0 0 4px #ccc, 0 -5px 4px #ff3, 2px -10px 6px #fd3, -2px -15px 11px #f80, 2px -18px 18px #f20;
+    font-size: 150%;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    bottom: 4%;
+    text-decoration: none;
 }
-.bottomGameOptions, #gameLevel, #gameScore{
-	color: #ffffff; 
-	text-shadow: 0 0 4px #ccc, 0 -5px 4px #ff3, 2px -10px 6px #fd3, -2px -15px 11px #f80, 2px -18px 18px #f20;	
-	font-size:  150%;
-  	padding: 0;
-  	margin: 0;
-	position: fixed;
-  	bottom: 4%;
-	text-decoration:none;
-}
-.homeScreenNameClass{
-	color: #ffffff; 
-	text-shadow: 0 0 4px #ccc, 0 -5px 4px #EAEFF0, 2px -10px 6px #0099CC, -2px -15px 11px #6CC4E0, 2px -18px 18px #f20;
-	position: fixed;
-	font-size:  475%;
-  	padding: 0;
-  	margin: 0;	
-	text-decoration:none;
-	top: 5%;
+.homeScreenNameClass {
+    color: #ffffff;
+    text-shadow: 0 0 4px #ccc, 0 -5px 4px #EAEFF0, 2px -10px 6px #0099CC, -2px -15px 11px #6CC4E0, 2px -18px 18px #f20;
+    position: fixed;
+    font-size: 475%;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    top: 5%;
     left: 4%;
 }
 #gameRestart {
-  left : 4%;   
+    left: 4%;
 }
 #gameExit {
-  left : 8%;   
+    left: 8%;
 }
-#gameRestart:hover{
-  text-decoration:underline;
+#gameRestart:hover {
+    text-decoration: underline;
 }
-#gameExit:hover{
-  text-decoration:underline;
+#gameExit:hover {
+    text-decoration: underline;
 }
 #gameLevel {
-  left : 24%; 
+    left: 24%;
 }
 #gameScore {
-  left : 50%; 
+    left: 50%;
 }
-.gameOver{
-    margin-left: 7%;    
+.gameOver {
+    margin-left: 7%;
     max-width: 30%;
 }
 .bottomGameOptions:hover {
@@ -86,87 +114,97 @@ margin: 0;
     cursor: pointer;
     opacity: .5;
 }
-@media screen and (max-width: 499px) {
-	.playButton{
-   		padding-left: 2%;
-	}
-}
-@media screen and (min-width: 500px) and (max-width: 624px) {
-	.playButton{
-   		padding-left: 4%;
-	}
-}
-@media screen and (min-width: 625px) and (max-width: 729px) {
-	.playButton{
-   		padding-left: 6%;
-	}
-}
-@media screen and (min-width: 730px) and (max-width: 829px) {
-	.playButton{
-   		padding-left: 8%;
-	}
-}
-@media screen and (min-width: 830px) and (max-width: 929px) {
-	.playButton{
-   		padding-left: 10%;
-	}
-}
-@media screen and (min-width: 930px){
-	.playButton{
-   		padding-left: 12%;
-	}
-}
-.target, .hits, .misses, .accuracy, .time{
-	color: #000000;
-   text-shadow: 0 0 4px #ccc, 0 -5px 4px #ff3, 2px -10px 6px #fd3, -2px -15px 11px #f80, 2px -18px 18px #f20;
-    font-size: 172%;    
+.target,
+.hits,
+.misses,
+.accuracy,
+.time {
+    color: #000000;
+    text-shadow: 0 0 4px #ccc, 0 -5px 4px #ff3, 2px -10px 6px #fd3, -2px -15px 11px #f80, 2px -18px 18px #f20;
+    font-size: 172%;
     margin-left: 4%;
-	margin-bottom: 4%;
-	
+    margin-bottom: 4%;
 }
-.tableTimeHead, .tableScoreHead, .tableRankHead{
-	color: #000000;
-	font-size: 140%;   
-	text-shadow: 0 0 4px #ccc, 0 -5px 4px #ff3, 2px -10px 6px #fd3, -2px -15px 11px #f80, 2px -18px 18px #f20;
+.tableTimeHead,
+.tableScoreHead,
+.tableRankHead {
+    color: #000000;
+    font-size: 140%;
+    text-shadow: 0 0 4px #ccc, 0 -5px 4px #ff3, 2px -10px 6px #fd3, -2px -15px 11px #f80, 2px -18px 18px #f20;
     margin-left: 4%;
-	margin-bottom: 4%;
+    margin-bottom: 4%;
 }
-.tableTime, .tableScore, .tableRank{
-	color: #000000;
-    font-size: 100%; 
+.tableTime,
+.tableScore,
+.tableRank {
+    color: #000000;
+    font-size: 100%;
     text-shadow: 0 0 4px #ccc, 0 -5px 4px #ff3, 2px -10px 6px #fd3, -2px -15px 11px #f80, 2px -18px 18px #f20;
     margin-left: 8%;
-	margin-bottom: 4%;
+    margin-bottom: 4%;
 }
-.fiveScorers{
-	
-	color: #000000;
+.fiveScorers {
+    color: #000000;
     text-shadow: 0 0 4px #ccc, 0 -5px 4px #ff3, 2px -10px 6px #fd3, -2px -15px 11px #f80, 2px -18px 18px #f20;
     font-size: 172%;
 }
-.endGameRestart, .endGameExit{
-	max-width: 12%;
-	margin-left: 10%;
+.endGameRestart,
+.endGameExit {
+    max-width: 12%;
+    margin-left: 10%;
 }
-#targetValue, #hitsValue, #missesValue, #accuracyValue, #timeValue{
-	margin-left: 0%;	
+#targetValue,
+#hitsValue,
+#missesValue,
+#accuracyValue,
+#timeValue {
+    margin-left: 0%;
 }
-#endCard{
-	height: 88%;
-	background-image: url('../IMG/endCard.jpg');
-	background-size:100% 98%;
-	background-repeat: no-repeat;
+#endCard {
+    height: 88%;
+    background-image: url('../images/endCard.jpg');
+    background-size: 100% 98%;
+    background-repeat: no-repeat;
 }
-#leftEndCard{
+#leftEndCard {
     float: left;
     margin-left: 12%;
-	width: 40%;
+    width: 40%;
 }
-#rightEndCard{
-    
+#rightEndCard {
     margin-right: 9%;
 }
-.awardImage img{
-max-width: 4%;
-display:none;
+.awardImage img {
+    max-width: 4%;
+    display: none;
+}
+@media screen and (max-width: 499px) {
+    .playButton {
+        padding-left: 2%;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 624px) {
+    .playButton {
+        padding-left: 4%;
+    }
+}
+@media screen and (min-width: 625px) and (max-width: 729px) {
+    .playButton {
+        padding-left: 6%;
+    }
+}
+@media screen and (min-width: 730px) and (max-width: 829px) {
+    .playButton {
+        padding-left: 8%;
+    }
+}
+@media screen and (min-width: 830px) and (max-width: 929px) {
+    .playButton {
+        padding-left: 10%;
+    }
+}
+@media screen and (min-width: 930px) {
+    .playButton {
+        padding-left: 12%;
+    }
 }
