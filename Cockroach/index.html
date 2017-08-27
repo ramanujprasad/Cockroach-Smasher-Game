@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="CSS/game.css" rel="stylesheet" type="text/css">
+		<script src="JS/jquery-2.1.4.min.js"></script>
+		<script src="JS/game.js"></script>		
+ 		<title>Cockroach Smasher</title>
+	</head>
+	<body>
+		<div class="container mainScreen" id="mainDivId">
+			<div id="aliveDiv0" style="display:none; padding-left: 3%;"><img class="image image0 activeCockroach" id="aliveCockroach0" style="" src="IMG/Active.png" /></div> 
+			<div id="aliveDiv1" style="display:none; padding-left: 25%;"><img class="image image1 activeCockroach" id="aliveCockroach1" style="" src="IMG/Active.png" /></div> 
+			<div id="aliveDiv2" style="display:none; padding-left: 50%;"><img class="image image2 activeCockroach" id="aliveCockroach2" style="" src="IMG/Active.png" /></div>
+			<div id="aliveDiv3" style="display:none; padding-left: 75%;"><img class="image image3 activeCockroach" id="aliveCockroach3" style="" src="IMG/Active.png" /></div>
+			<div id="deadDiv" style="display:none;"><img class="deadCockroach" id="deadCockroach0"  src="IMG/Dead.png" /></div>
+			<div class="bottomFameOptionsDiv" style="display:none;">
+				<span  class="bottomGameOptions" id="gameExit">Exit</span>
+				<span  class="" id="gameLevel">Timer - <span id="level">0</span></span>
+				<span  class="" id="gameScore">score - <span id="score">0</span></span>				
+			</div>
+			<div class="homeScreenName" style="">
+				<span  class="homeScreenNameClass" id="">Cockroach <br/>Smasher</span>
+			</div>
+			<div id="homeScreenPlay">
+				<img class="playButton" src="IMG/playButton.png" />
+			</div>
+			<div id="endCard" style="display:none;">
+				<div align="center"><img class="gameOver" src="IMG/GameOver.png" /></div>
+				<div align="center" style="margin-top: 0%;">
+					<span  class="accuracy" id="">Your Ranking : </span>					
+					<span  class="accuracy" id="userRank"></span>
+				</div><br/>
+				<div id="leftEndCard">
+				<div class="" style="">
+					<span  class="target" id="target">Target: </span>
+					
+					<span  class="target" id="targetValue">25</span>					
+				</div><br/>
+				<div class="" style="">
+					<span  class="hits" id="hits">Hits: </span>
+					
+					<span  class="hits" id="hitsValue"></span>					
+				</div><br/>
+				<div class="" style="">
+					<span  class="misses" id="misses">Miss Hits: </span>
+					
+					<span  class="misses" id="missesValue"></span>					
+				</div><br/>
+				<div class="" style="">
+					<span  class="time" id="time">Time: </span>					
+					<span  class="time" id="timeValue"></span>					
+				</div><br/>
+				<div class="" style="">
+					<span  class="accuracy" id="accuracy">Accuracy: </span>
+					
+					<span  class="accuracy" id="accuracyValue"></span>					
+				</div>
+				<div class="" style="">
+					<span  class="accuracy" id=""></span>
+					
+					<span  class="accuracy" id=""></span>					
+				</div>
+				<div class="" style="">
+					<span  class="accuracy" id=""></span>
+					
+					<span  class="accuracy" id=""></span>					
+				</div>
+				</div>
+				<div id="rightEndCard">
+				<div class="fiveScorers" style="" >	Top Five Scorer's</div></br>
+				<div class="" style="">
+					<span  class="tableRankHead" id="">Rank</span>					
+					<span  class="tableScoreHead" id="">Hits</span>
+					<span  class="tableTimeHead" id="">Time</span>					
+				</div><br/>
+				<div class="" style="">
+					<span  class="tableRank" id="">1</span>					
+					<span  class="tableScore" id="tscore0"></span>
+					<span  class="tableTime" id="time0"></span>	
+					<span  class="awardImage sucessImage0" id="" style="padding-left: 4%;">
+						<img class="" style="margin-top: 0%; " src="IMG/awards.png" />
+					</span>						
+				</div><br/>
+				<div class="" style="">
+					<span  class="tableRank" id="">2</span>					
+					<span  class="tableScore" id="tscore1"></span>
+					<span  class="tableTime" id="time1"></span>	
+					<span  class="awardImage sucessImage1" id="" style="padding-left: 4%;">
+						<img class="" style="margin-top: 0%; " src="IMG/awards.png" />
+					</span>	
+				</div><br/>
+				<div class="" style="">
+					<span  class="tableRank" id="">3</span>					
+					<span  class="tableScore" id="tscore2"></span>
+					<span  class="tableTime" id="time2"></span>	
+					<span  class="awardImage sucessImage2" id="" style="padding-left: 4%;">
+						<img class="" style="margin-top: 0%; " src="IMG/awards.png" />
+					</span>	
+				</div><br/>
+				<div class="" style="">
+					<span  class="tableRank" id="">4</span>					
+					<span  class="tableScore" id="tscore3"></span>
+					<span  class="tableTime" id="time3"></span>
+					<span  class="awardImage sucessImage3" id="" style="padding-left: 4%;">
+						<img class="" style="margin-top: 0%; " src="IMG/awards.png" />
+					</span>	
+				</div><br/>
+				<div class="" style="">
+					<span  class="tableRank" id="">5</span>					
+					<span  class="tableScore" id="tscore4"></span>
+					<span  class="tableTime" id="time4"></span>	
+					<span  class="awardImage sucessImage4" id ="" style="padding-left: 4%;">
+						<img class="" style="margin-top: 0%; " src="IMG/awards.png" />
+					</span>	
+				</div>
+				</div><br/><br/><br/>
+				<div align="center" style="margin-top: 0%;">
+					<img class="endGameRestart" src="IMG/restart.png" />
+					
+					<img class="endGameExit" src="IMG/exit.png" />
+				</div>	<br/>				
+				<div align="center" id="congrats" style="display:none;">
+					<img class="" style="max-width: 45%; " src="IMG/congrats.png" />					
+				</div>								
+			</div>
+		</div>		
+	</body>
+</html>
