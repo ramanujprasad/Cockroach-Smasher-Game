@@ -20,3 +20,8 @@ Best score will be shown on the screen
 ## Purpose
 
 This game is just created for fun and learn some concepts of events, traverseing and animations.
+
+
+## How game looks like?
+
+![Game Image](https://github.com/ramanujprasad/CockroachSmasherGame/blob/master/Cockroach/images/game.JPG)
